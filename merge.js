@@ -16,15 +16,12 @@ function split(list)
 function mergeSort(list)
   
 {
-  
-
   if (list.length<=1) // base case
   {
     log('list length = 1')   
     log('return list : ',list)
     return list    
   }
-    
   else
     {
       
@@ -48,8 +45,6 @@ function mergeSort(list)
       return merge(left,right)
       
     }  
-   // 
-  
 }
 
 function merge(left,right)
