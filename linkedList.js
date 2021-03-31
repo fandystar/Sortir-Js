@@ -36,9 +36,18 @@ function printList(list)
     
 }
 // printList(four)
-function makeNode(value)
+// function makeNode(value)
+// {
+//     return {value:value,next:null}
+// }
+
+class Node
 {
-    return {value:value,next:null}
+    constructor(value, next = null)
+    {
+        this.value = value,
+        this.next = next
+    }
 }
 
 class List 
@@ -63,7 +72,7 @@ class List
     
     append(value) 
     {
-      let node = makeNode(value)
+      let node = new Node(value)
   
       // Is it currently empty?
       if(!this.tail) 
@@ -84,7 +93,7 @@ class List
     }   
     prepend(value) 
     {
-      let node = makeNode(value)
+      let node = new Node(value)
   
       // Is it currently empty?
       if(!this.head) 
