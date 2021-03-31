@@ -75,13 +75,15 @@ function merge(left,right)
       }  
     }
     
-    while (i<left.length){
+    while (i<left.length)
+    {
       result.push(left[i])
       //log(l)
       i=i+1
     }
     
-    while (j<right.length){
+    while (j<right.length)
+    {
       result.push(right[j])
       //log(l)
       j=j+1
