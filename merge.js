@@ -73,14 +73,12 @@ function merge(left,right)
     while (i<left.length)
     {
       result.push(left[i])
-      //log(l)
       i=i+1
     }
     
     while (j<right.length)
     {
       result.push(right[j])
-      //log(l)
       j=j+1
     }
     
@@ -91,5 +89,5 @@ function merge(left,right)
 let test=[8,7,6,5,4,3,2,1]
 
 let sort = mergeSort(test)
+
 log(sort)
-//log('hai')
